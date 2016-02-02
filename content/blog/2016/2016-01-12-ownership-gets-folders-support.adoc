@@ -1,0 +1,19 @@
+---
+layout: post
+title: "Jenkins Ownership plugin gets an integration with folders"
+tags:
+- plugins
+author: oleg_nenashev
+---
+
+During last months I have been getting frequent questions about the
+link:https://wiki.jenkins-ci.org/display/JENKINS/CloudBees+Folders+Plugin[CloudBees Folders Plugin]
+support in 
+link:https://wiki.jenkins-ci.org/display/JENKINS/Ownership+Plugin[Ownership Plugin].
+On this New Year break I've finally found some time to implement this feature.
+
+About Ownership Plugin.
+The plugin allows assigning owners and co-owners of different items (jobs, nodes and now folders).
+This ownership information can be used for the better visualization of jobs, environment injection and various security features. 
+
+About CloudBees .

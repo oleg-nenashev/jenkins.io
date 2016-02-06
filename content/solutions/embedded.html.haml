@@ -4,53 +4,61 @@ title: "Jenkins in Embedded World"
 usecase: "Embedded"
 articles:
 -
-  - Jenkins-Based CI for Heterogeneous Hardware/Software Projects
-  - Oleg Nenashev
-  - JUC2015/London
+  - http://todo.com/index.html
+  - "Jenkins-Based CI for Heterogeneous Hardware/Software Projects"
+  - "Oleg Nenashev"
+  - "JUC2015/London"
 -
- - 
- - Multi-Stage-CI with Jenkins in an Embedded World
- - Robert Martin
- - JUC2014/Berlin
+ - http://todo.com/index.html
+ - "Multi-Stage-CI with Jenkins in an Embedded World"
+ - "Robert Martin"
+ - "JUC2014/Berlin"
 -
+ - http://todo.com/index.html
+ - "FPGA CI with Jenkins"
+ - "Martin d’Anjou"
+ - "SNUG2013/Canada"
 -
- - 
- - FPGA CI with Jenkins
- - Martin d’Anjou
- - SNUG2013/Canada
+ - http://todo.com/index.html
+ - "Alan Fitch, “Continuous Integration for FPGA Design and Verification"
+ - "Verification Futures, 2015"
 -
+ - http://todo.com/index.html
+ - "A 30 Minute Project Makeover Using Continuous Integration"
+ - "JL Gray, Gordon McGregor"
+ - "DVCon, 2012"
 -
- - 
- - Alan Fitch, “Continuous Integration for FPGA Design and Verification
- - Verification Futures, 2015
+ - http://todo.com/index.html
+ - "The Famous Cows of Cambridge: A Non-Standard Use Case for Jenkins"
+ - "Sarah Woodall"
+ - "JUC2015/London"
 -
--
- - A 30 Minute Project Makeover Using Continuous Integration
- - JL Gray, Gordon McGregor
- - DVCon, 2012
--
--
- - The Famous Cows of Cambridge: A Non-Standard Use Case for Jenkins
- - Sarah Woodall
- - JUC2015/London
--
--
- - kernelci.org: The Upstream Linux Kernel Validation Project
- - Milo Casagrande
- - FOSDEM, 2016
+ - http://todo.com/index.html
+ - "kernelci.org: The Upstream Linux Kernel Validation Project"
+ - "Milo Casagrande"
+ - "FOSDEM, 2016"
 ---
 
 :markdown
   Jenkins is an extensible framework, which can be applied to many areas including 
   Embedded Software and even Hardware development.
-  In the case of proper configuration Jenkins can be Jenkins can effectively
-  operate with hardware permissions attached to Jenkins build agents.
+  In the case of proper configuration Jenkins can be Jenkins can effectively operate with hardware permissions attached to Jenkins build agents.
   
   ## Working with tools
   
-  Jenkins has 
+  Jenkins has plugins for integration with common tools like GCC, Microsoft Visual Studio, etc.
+  On the other hand, it has almost no integrations neither with domain-specific SW development nor with EDA tools.
+  Availability of such these tools is critical for the automation flows in this area.
+  
+  However, any tool can be integrated into Jenkins using its command-line interface.class_selector
+  Such tools can be invoked directly from shell build steps.
+  
+  1) In order to integrate setup the tool environment, consider Custom Tools Plugin
   
   ## Working with FPGA boards
+  
+  Interaction with FPGA boards can be done via CLI tools as well.
+  On the other hand, working with external perpherals requires prevention of conflicts between parallel builds utilizing the same resources.
   
   ## Working with computing grids
 
@@ -59,8 +67,12 @@ articles:
   However, the most of computing grid operations can be performed using CLI tools being 
   provided by all computing grids.
 
+  ## Handling custom report formats
   
   ## Presentations
+
+Below you can find a presentation made by Oleg Nenashev at Jenkins User Conference 2015 in London.
+This presentation provide some details about the referenced 
 
 %center
 %iframe{:width => 560, :height => 315, :frameborder => 0,

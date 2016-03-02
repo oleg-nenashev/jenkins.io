@@ -1,0 +1,27 @@
+- # Prints a reference to a document
+- #
+- # Parameters
+- #   - title - Title of the article
+- #   - docLink - Link to the document
+- #   - summary - Summary information about the document
+- #   - author - Author
+- #   - authorLink - Link to the author
+- #   - where - Where the document has been published or presented
+- #   - whereLink - Optional link
+- #   
+- # Author: Oleg Nenashev
+
+- # Ensure we have URI in scope
+- require 'uri'
+
+%a.article{:href => link}
+  - if legacy?
+    = title
+  - else
+    = title
+- #      .url= URI.parse(docLink).host
+- #  ,
+- #   = author
+- # ,
+-  #  = where
+- #      .url= URI.parse(authorLink).host

@@ -1,0 +1,23 @@
+
+
+%div
+  -if legacy?
+    %h2= page.title
+  - else
+    %h4= page.title
+
+  %div.content
+    %div.item-list
+      - if page.articles
+        %ul.ji-dated-list
+          - page.articles.each do |docLink, title, summary, author, authorLink, where, whereLink|
+            %li.post
+              =partial('article.html.haml',
+                :title => title,
+                :docLink => link,
+                :summary => summary,
+                :author => author,
+                :authorLink => authorLink,
+                :where => where,
+                :whereLink => whereLink)
+

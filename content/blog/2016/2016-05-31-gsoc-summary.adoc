@@ -1,0 +1,26 @@
+---
+layout: post
+title: "Google Summer of Code. Project announcements"
+tags:
+- general
+- jenkins2
+- gsoc
+author: oleg_nenashev
+---
+
+On jenkins.io may have seen several blogposts about Google Summer of Code 2016.
+And this is just the beginning.
+Over last two months the community representatives and students were working heavily 
+in order to establish contacts with the community and to define their project plans.
+Now all the students have started the coding phase in their projects.
+
+In total we have 5 projects
+* Jenkins Web Interface Improvements: New Job Creation and Configuration 
+** Student: Samat Davletshin
+** Mentors: link:https://github.com/michaelneale[Michael Neale] and link:https://github.com/lanwen[Merkushev Kirill]
+* Support core plugin improvements
+** Student: Minudika Madshan
+** Mentors: link:https://github.com/aheritier[Arnaud Heritier] and link:https://github.com/christ66[Steven Christou]
+* Jenkins Usage Statistics Analysis
+** Student:
+** Mentors:

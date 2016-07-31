@@ -1,0 +1,181 @@
+---
+layout: post
+title: "Upgrading to Jenkins 2 LTS. Obstacles and solutions"
+tags:
+- lts
+- jenkins2
+author: oleg_nenashev
+---
+
+=== Introduction
+
+On 6th July 2016 there was a first LTS version of Jenkins (version 2.7.1). 
+On this week we also expect the 2.7.2 release.
+*LTS* stands for "long-time supported"; in Jenkins it means a stabilization branch, 
+which gets several bug fix releases over 12 weeks.
+Usage of such LTS versions is highly recommended for production Jenkins instances with high stability requirements.
+
+So many you may consider updating to Jenkins 2.7.x LTS baseline.
+As it stated in link:TODO[Kohsuke's blogpost], this version is completely safe (TODO: verify the phrase).
+As a Jenkins administrator, I do not completely agree with this statement.
+In my humble opinion, the update is mostly safe from the plugin compatibility point of view, 
+but there are some changes, which may impact Jenkins environments.
+
+In this blog post I would like to overview the changes in 2.7.1, which may potentially impact your installation when you upgrade from previous Jenkins 1.x versions.
+
+=== What's inside Jenkins LTS 2.7.x?
+
+Jenkins 2.7.x is a very first LTS version of link:TODO[Jenkins 2].
+You can find the full list of changes by using
+link:TODO[Jenkins Weekly changelogs] between your release and version _2.7_ *plus* 
+changes in link:TODO[Jenkins LTS changelog] for the 2.7.x baseline.
+
+I would like to mention several major changes for ones who upgrade from the latest
+Jenkins _1.651.3_ release.
+
+==== Major new features and improvements
+* Unbundling of plugins from the Jenkins core
+* New installation/upgrade wizard
+* Several security options are enabled by default (link:TODO[CSRF protection], link:TODO[Slave2Master security])
+
+==== Major bugfixes
+
+
+
+=== Obstacles when upgrading from previous LTS versions
+
+In this section I would like to overview several potential issues,
+which may appear after the upgrade to Jenkins 2 LTS.
+
+==== Security-related obstacles
+
+In Jenkins project we think that it is preferable to have a secured installation by default.
+So the core frequently gets security fixes and enhancements.
+Some of there fixes may impact the default behavior of Jenkins.
+
+===== Security-by-default and configuration management tools
+
+Jenkins _1.x_ used to start up in the unsecured mode.
+It allowed to easily configure Jenkins instances on startup, 
+but on the other hand an attacker was able to connect to the newly installed Jenkins
+and to run/install a malicious code on the instance.
+
+*Change*: Starting form Jenkins 2, the instance starts up in the locked mode. 
+A Jenkins admin is able to unlock the instance by using a temporary password available within _JENKINS_HOME_.
+Also, new Jenkins 2 instances start up with CSRF Protection and Slave-2-Master by default.
+
+*Issue impact*: Security hardening impacted many configuration management tools, which used to presume that Jenkins starts up in the unsecured mode.
+
+TODO: issues and links
+Examples of impacted tools:
+* chef-cookbooks/jenkins (Issue #466)
+* puppet-jenkins (https://Issue #575 )
+* ansible-jenkins (FIXED, )
+* python-jenkins
+
+If you use configuration as code for rolling up Jenkins instances, 
+please be aware about this change.
+
+===== SECURITY-170 (pre 1.651.3 versions)
+
+*SECURITY-170* is a major security fix, which has been introduced in Jenkins _1.651.3_ and _2.3_ versions.
+
+The issue is related to the opportunity of passing build parameters, which have not been defined in job definitions.
+Such behavior allows creating exploits for Jenkins by hijacking environment variables being used in scripts.
+You can read more about this issue at the link:TODO[Jenkins Security Advisory].
+
+NOTE: *Lifehack*: 
+Security fixes may alter the default behavior of Jenkins.
+If you are aware about such issues, please subscribe to Jenkins Security Advisories.
+See the guide link:TODO[here].
+
+Many plugins were using such approach 
+in order to pass data to build environments by variables without defining them in job properties.
+And this 
+
+*Issue impact*: 
+At least *17 plugins* have been affected.
+And bad news is that not all of them have been fixed by August 2016.
+You can find the list of affected plugins and the current status at the link:TODO[special Wiki page]
+
+*Workaround*: TODO
+
+==== Jenkins generic issues
+
+===== Potential plugin compatibility issues
+
+Jenkins 2 Upgrade Wizard offers installation of plugins,
+which have not been bundled in previous Jenkins cores
+(e.g. Git/GtHub stack, Folders, Pipeline).
+
+In Jenkins project there are efforts in order to ensure compatibility of plugins,
+but there are still risks when you update instances.
+In the case of Jenkins Pipeline, there are still several known compatibility issues in plugins.
+
+*Recommended actions*: On production instances it's highly recommended to test any plugin installations or upgrades.
+If you experience any issue and cannot find a bug in Jenkins JIRA, please create a new one.
+
+===== Change of Jenkins HTML layouts
+
+In Jenkins 2 there was a significant effort related to improving of the WebUI user experience.
+It lead to the change of layouts of several pages including configuration screens and the _New Item_ page.
+
+*Impact*: HTML layout has changed. 
+It impacts custom Web UI patches coming from custom JavaScript and CSS 
+(as example, via link:TODO[Simple Theme Plugin]). 
+
+*Recommended actions*: You may have to update custom CSS and JavaScript files in order to make them compatible with the new layout.
+
+===== Terminology changes may be confusing to users
+
+In Jenkins 2 there was a renaming of "slaves" to "agents". 
+You can see details about this update in
+link:TODO[JENKINS-TODO].
+
+*Impact*: Jenkins WebUI and documentation has been changed.
+On the other hand, there are many plugins, which use Jenkins 1.x core as a baseline and follow its terminology.
+If you have internal documentation, it may become outdated now 
+(other Jenkins 2 changes also may require an update there).
+
+*Recommended actions*: Custom documentation (text and screenshots) may need update.
+If you see issues in plugins, create low-priority  bugs to them. 
+Likely it will take pretty much time to get updates everywhere.
+
+=== Upgrade recommendations
+
+After reading the info above you may think that upgrade to Jenkins 2.7.x may be dangerous.
+And yes, I think that such upgrade may imply some risks for real-world Jenkins instances.
+Does it mean that I do not recommend migrating to Jenkins 2?
+
+The answer is *no*, actually I *recommend* using Jenkins 2 LTS for new installations and upgrading the previous ones.
+It is not a secret that production system upgrade without testing is a bad practice.
+And no wonder the rule also applies to automation servers like Jenkins.
+If you perform upgrade, it's highly recommended to evaluate the upgrade on a test server before pushing changes to production.
+Or to have a backup at least...
+
+If you consider upgrading now, I would recommend the following approach:
+
+0. Wait till Jenkins _2.7.2_, which is expected to be released by *August 4th*
+0. Perform backup of your system (or use a test instance)
+0. Install Jenkins LTS 2.7.2 to your system
+0. When Jenkins starts up, run the _Upgrade Wizard_ and select plugins to be installed
+0. Upgrade plugins, especially ones mentioned in 
+link:TODO[SECURITY-170 impact list]
+and link:TODO[Security advisories for plugins]
+0. If you still have plugins affected by *SECURITY-170*, consider setting up the _TODO_ system property in order to apply the workaround (*warning*: the workaround impacts the security of your instance)
+0. After the system startup, consider enabling CSRF protection and Slave-2-Master security feature if they were disabled on your previous setup.
+0. Test your Jenkins instance and other services using its CLI and REST API. Fix the 
+0. Make decisions regarding further steps:
+ * If the instance works fine, you may keep the upgrade (or upgrade the production instance)
+ * If you hit a showstopper, let Jenkins community know about it by 
+link:TODO[creating an issue] and then restore the system from backup.
+0. After the upgrade, update your internal documentation in order to reflect changes in the WebUI and "slave/agent" terminology.
+
+=== Conclusions
+
+I think that Jenkins 2 LTS provides much important changes including security fixes.
+Jenkins installations may definitely benefit from upgrading to this release.
+
+Hopefully this guide will help you to create a proper upgrade plan and to avoid the mentioned obstacles.
+If you discover something new, please do not hesitate to contact Jenkins core team using  
+link:TODO[JIRA bugtracker] or other channels.

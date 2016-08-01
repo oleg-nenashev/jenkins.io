@@ -1,0 +1,40 @@
+---
+layout: post
+title: "Ownership plugin gets integration with Folders and Pipeline"
+tags:
+- plugins
+- pipeline
+- folders
+author: oleg_nenashev
+---
+
+During last months I have been getting frequent questions about the
+link:https://wiki.jenkins-ci.org/display/JENKINS/CloudBees+Folders+Plugin[CloudBees Folders Plugin]
+support in 
+link:https://wiki.jenkins-ci.org/display/JENKINS/Ownership+Plugin[Ownership Plugin].
+On this New Year break I've finally found some time to implement this feature.
+
+== Introduction
+
+Ownership plugin allows assigning primary and secondary owners different Jenkins items (jobs, nodes and now folders).
+This ownership information can be used for the better visualization of jobs or environment variable injection.
+Here is an example of the ownership info box:
+
+TODO: image
+
+Plugin also has integrations with multiple security-related plugins:
+* link:TODO[Role-Strategy plugin] - provides (see link:TODO[Ownership-based security])
+* link:TODO[Job Restrictions plugin] - restricting executions on nodes by owners and also allows restricting job triggering from upstream jobs
+* link:TODO[Authorize project plugin] - authorizing builds as job owners
+
+In the last release the plugin has got additional integrations.
+
+== Folders Plugin Integration
+
+Change summary:
+* It is possible to assign owners to folders
+* Jobs and folders can inherit ownership info from upper folders
+
+== Pipeline Integration
+
+Code example: 

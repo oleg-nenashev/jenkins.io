@@ -125,6 +125,14 @@ You can find the list of affected plugins and the current status on the link:htt
 
 *Workaround*: Workarounds for Jenkins users and plugin developers are provided in the link:https://jenkins.io/blog/2016/05/11/security-update/[blogpost] by Daniel Beck.
 
+===== JNLP3 Scalability
+
+TODO: NIO, other issues from the bugtracker
+
+Impact:TODO: mention the potential scalability issues
+
+Good news is that there is an link:https://github.com/jenkinsci/remoting/pull/92[ongoing work] on the JNLP4 protocol, which should resolve the issues mentioned above.
+
 ==== Jenkins generic issues
 
 ===== Potential plugin compatibility issues

@@ -1,0 +1,50 @@
+---
+layout: post
+title: "GSoC: Jenkins Online Meetup - Project presentations by students"
+tags:
+- core
+- gsoc
+- plugin
+- general
+- meetup
+author: oleg_nenashev
+---
+
+On this year Jenkins project participates in Google Summer of Code 2016. 
+On this year we had 5 students working on different areas in the Jenkins core, plugins and the project infrastructure. 
+You can read more about student projects link:TODO[here].
+
+On June we had mid-term evaluation of students. 
+You can find links to the description and video recordings link:TODO[in this blogpost].
+After this evaluation 3 projects have been cancelled. 
+But we still have 2 students: Alexandru Somai and Samat Davletsin.
+
+On August 25 we will conduct a Jenkins online meetup, where the students will present their final results. 
+You can register to these meetup link:TODO[here].
+
+==== Abstracts
+
+===== External Workspace Manager Plugin
+
+Currently, Jenkins’ build workspace may become very large in size due to the fact that some compilers generate very large volumes of data. 
+One of solutions is to have a Jenkins plugin that is able to manage and reuse the same workspace between multiple builds.
+
+link:TODO[External Workspace Manager Plugin] provides a workspace management system for link:TODO[Jenkins Pipeline]. 
+It facilitates workspace share and reuse across multiple Jenkins jobs running on different nodes. 
+It eliminates the need to copy, archive or move files. 
+Plugin also supports automatic workspace cleanup, multiple disk pools and flexible disk selection management.
+
+During the presentation Alex will overview the plugin and its common use-cases.
+There will be also a short demo of the plugin.
+
+Related materials:
+
+* link:TODO[Mid-term presentation by Alex]
+
+===== Jenkins Web UI improvements
+
+==== Links
+
+* link:https://groups.google.com/forum/#!topic/jenkinsci-dev/OX1ZdRVqS24[Mid-term presentations announcement on Jenkins Developer mailing list]
+* link:https://wiki.jenkins-ci.org/display/JENKINS/Google+Summer+Of+Code+2016[Jenkins GSoC 2016 Wiki Page]
+* link:https://summerofcode.withgoogle.com/organizations/5668199471251456/[Jenkins project page on the GSoC2016 website]

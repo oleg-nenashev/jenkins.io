@@ -30,3 +30,8 @@ articles:
  - "FPGA CI with Jenkins (requires SNUG account)"
  - "Martin d’Anjou"
  - "SNUG2013/Canada"
+plugins:
+-
+  - 'https://wiki.jenkins-ci.org/display/JENKINS/PikeTec+TPT+Plugin'
+  - 'PikeTec TPT Plugin'
+  - 'Allows executing tests in TPT (Time Partition Testing) tool with Jenkins'

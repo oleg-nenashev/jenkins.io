@@ -1,0 +1,32 @@
+usecase: "Hardware and Electronic Design Automation"
+articles:
+-
+  - https://www.cloudbees.com/jenkins/juc-2015/presentations/JUC-2015-Europe-Jenkins-Based-CI-for-Nenashev.pdf
+  - "Jenkins-Based CI for Heterogeneous Hardware/Software Projects"
+  - "Oleg Nenashev"
+  - "JUC2015/London"
+-
+ - http://www.testandverification.com/VerificationFutures/2015/Alan_Fitch.pdf
+ - "CI for FPGA D&V"
+ - "Alan Fitch"
+ - "Verification Futures, 2015"
+-
+ - http://www.synopsys.com/news/pubs/snug/2013/canada/a1_danjou_paper.pdf
+ - "FPGA CI with Jenkins (requires SNUG account)"
+ - "Martin d’Anjou"
+ - "SNUG2013/Canada"
+-
+  - https://speakerdeck.com/onenashev/orconf2016-automating-hw-projects-with-jenkins
+  - 'Automating HW Projects with Jenkins'
+  - 'Oleg Nenashev'
+  - 'ORCONF2016'
+plugins:
+-
+  - 'https://wiki.jenkins-ci.org/display/JENKINS/Cadence+vManager+Plugin'
+  - 'Cadence vManager Plugin'
+  - 'This plugin adds an ability to perform REST over HTTP calls to Cadence vManager as a step in your build'
+-
+  - 'https://wiki.jenkins-ci.org/display/JENKINS/Questa+VRM+Plugin'
+  - 'Questa VRM Plugin'
+  - 'Adds the ability for Jenkins to publish results from Mentor Graphics Questa Verification Run Manager (VRM)'
+  

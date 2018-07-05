@@ -4,13 +4,14 @@ layout: project
 
 - if page.logo
   %img{:title => "Logo", :src => expand_link(page.logo), :style => "float:right"}
+- data = site.sigs[page.sigId]
 
 = content
 
 %h3.title
   Chairs
 %ul
-  - page.chairs.each do |chair|
+  - data.chairs.each do |chair|
     %li
       %a{:href => "https://github.com/#{chair.github}", :target => "_blank"}
         = chair.name
@@ -18,17 +19,17 @@ layout: project
 %h3.title
   Links
 %ul
-  - if page.links.googlegroup
+  - if data.links.googlegroup
     %li
-      %a{:href => "https://groups.google.com/forum/#!forum/{page.links.googlegroup}", :target => "_blank"}
+      %a{:href => "https://groups.google.com/forum/#!forum/{data.links.googlegroup}", :target => "_blank"}
         Mailing List
-  - if page.links.gitter
+  - if data.links.gitter
     %li
-      %a{:href => "https://gitter.im/#{page.links.gitter}?utm_source=share-link&utm_medium=link&utm_campaign=share-link", :target => "_blank"}
-        %img{:title => "Gitter", :src => "https://badges.gitter.im/#{page.links.gitter}.svg"}
-  - if page.links.github
+      %a{:href => "https://gitter.im/#{data.links.gitter}?utm_source=share-link&utm_medium=link&utm_campaign=share-link", :target => "_blank"}
+        %img{:title => "Gitter", :src => "https://badges.gitter.im/#{data.links.gitter}.svg"}
+  - if data.links.github
     %li
-      %a{:href => "https://github.com/#{page.links.github}", :target => "_blank"}
+      %a{:href => "https://github.com/#{data.links.github}", :target => "_blank"}
         Github repository
 
   %li

@@ -2,24 +2,7 @@
 layout: sig
 title: "Platform SiG"
 section: sigs
-logo: /images/user.gif
-tags:
-  - java
-  - windows
-  - linux
-  - platform_sig
-chairs:
-- name: "Oleg Nenashev"
-  id: "oleg_nenashev"
-  github: "oleg-nenashev"
-  irc: "oleg_nenashev"
-  twitter: "oleg_nenashev"
-links:
-  gitter: "jenkinsci/platform-sig"
-  googlegroup: "jenkins-platform-sig"
-meetings:
-  text: Every month, to be announced
-  link: TODO
+sigId: "platform"
 ---
 
 The special interest group offers a venue for all kinds of platform support discussions:

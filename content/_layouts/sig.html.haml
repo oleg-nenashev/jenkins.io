@@ -9,12 +9,22 @@ layout: project
 = content
 
 %h3.title
-  Chairs
-%ul
-  - data.chairs.each do |chair|
-    %li
-      %a{:href => "https://github.com/#{chair.github}", :target => "_blank"}
-        = chair.name
+  Participants
+
+- if data.leads
+  Leads:
+  %ul
+    - data.leads.each do |lead|
+      %li
+        %a{:href => "https://github.com/#{lead.github}", :target => "_blank"}
+          = lead.name
+- if data.participants
+  Participants:
+  %ul
+    - data.participants.each do |participant|
+      %li
+        %a{:href => "https://github.com/#{participant.github}", :target => "_blank"}
+          = participant.name
 
 %h3.title
   Links

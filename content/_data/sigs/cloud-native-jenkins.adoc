@@ -10,10 +10,20 @@ tags:
 - aws
 - azure
 - gce
-chairs:
+leads:
 - name: "Carlos Sanchez"
   id: "csanchez"
   github: "carlossg"
+participants:
+- name: "Jesse Glick"
+  id: "jglick"
+  github: "jglick"
+- name: "Oleg Nenashev"
+  id: "oleg_nenashev"
+  github: "oleg-nenashev"
+- name: "Tracy Miranda"
+  id: "tracymiranda"
+  github: "tracymiranda"
 links:
   gitter: TODO
   googlegroup: TODO

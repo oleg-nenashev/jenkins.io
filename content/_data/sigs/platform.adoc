@@ -1,6 +1,6 @@
 ---
 layout: sig
-title: "Platform SiG"
+title: "Platform SIG"
 section: sigs
 logo: /images/user.gif
 tags:

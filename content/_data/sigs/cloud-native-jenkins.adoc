@@ -1,6 +1,6 @@
 ---
 layout: sig
-title: "Cloud Native Jenkins SiG"
+title: "Cloud Native Jenkins SIG"
 section: sigs
 logo: /images/user.gif
 tags:

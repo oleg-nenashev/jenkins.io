@@ -2,9 +2,9 @@
 layout: project
 ---
 
-- if page.logo
-  %img{:title => "Logo", :src => expand_link(page.logo), :style => "float:right"}
 - data = site.sigs[page.sigId]
+- if page.logo
+  %img{:title => "Logo", :src => expand_link(data.logo), :style => "float:right"}
 
 = content
 

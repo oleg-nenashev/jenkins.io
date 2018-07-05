@@ -22,7 +22,7 @@ meetings:
   link: TODO
 ---
 
-The special interest group offers a venue for all kinds of platform support discussions:
+This special interest group offers a venue for all kinds of platform support discussions:
 Java, Operating Systems, Architectures, Docker, Packaging, Web Containers, etc.
 
 The SiG works on defining platform support policies,

@@ -6,7 +6,6 @@ year: 2019
 skills:
 - Java
 - Performance Testing
-discussionTo: Google Doc link
 mentors:
 - name: "Oleg Nenashev"
   id: "oleg_nenashev"

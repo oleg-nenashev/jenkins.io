@@ -7,7 +7,7 @@ skills:
 - Java
 - EDA Tools
 sig: hw-and-eda
-discussionTo: Google Doc link
+discussionTo: https://docs.google.com/document/d/1v54zvQVp2HqWyxZ5b4QZ-THeTRQYiIAsIOX4hbvGPa0/edit?usp=sharing
 mentors:
 - name: "Martin d'Anjou"
   id: "deepchip"

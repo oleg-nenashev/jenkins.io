@@ -7,7 +7,7 @@ skills:
 - Java
 - Cloud-based storage (e.g. Amazon EFS)
 sig: cloud-native
-discussionTo: Google Doc link
+discussionTo: https://docs.google.com/document/d/12qsvHSJpDaYALQQgzWpWw0-cmu6QOAmhr5THK3T1U0M/edit?usp=sharing
 mentors:
 - name: "Martin d'Anjou"
   id: "deepchip"

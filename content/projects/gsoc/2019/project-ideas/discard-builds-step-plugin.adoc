@@ -5,7 +5,7 @@ goal: "Create a new plugin to give Jenkins users more options to manage and impl
 year: 2019
 skills:
 - Java
-discussionTo: Google Doc link
+discussionTo: https://docs.google.com/document/d/1W7YX4Y6PhIhraEQc9G-PKLSheJ6jXKgy8HmKVz1lCqs/edit?usp=sharing
 mentors:
 - name: "Martin d'Anjou"
   id: "deepchip"

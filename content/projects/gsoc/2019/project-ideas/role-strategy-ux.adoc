@@ -7,7 +7,6 @@ skills:
 - Java
 - JavaScript
 - REST/GraphQL
-discussionTo: Google Doc link
 mentors:
 - name: "Oleg Nenashev"
   id: "oleg_nenashev"

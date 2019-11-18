@@ -41,7 +41,7 @@ This year the org admin team had some very difficult decisions to make.
 With lots of students, lots of projects and lots of mentors, we had to request the right number of slots and try to match the projects with the most chances of success.
 Unfortunately, we had a some difficulty getting all mentors to respond in time for the slot selection, thus we requested fewer slots than we could have filled.
 
-We have found that the community bonding phase was crucial to the success of each project.
+We have found that the link:https://developers.google.com/open-source/gsoc/resources/glossary#community_bonding_period[community bonding phase] was crucial to the success of each project.
 Usually projects that don’t do well during community bonding have difficulties later on.
 
 We adopted Zoom Meetings towards the end of the program, and we are finding it easier to work with than Google hangouts.

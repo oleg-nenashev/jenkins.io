@@ -204,7 +204,7 @@ We are working on sending students to the link:https://www.cloudbees.com/devops-
 
 This year, five projects were successfully completed. We find this to be normal and in line with what we hear from other participating organizations.
 
-Taking the time early to update our GSoC pages saved us a lot of time later on because we did not have to repeat all the information every time someone contacted us.
+Taking the time early to update our GSoC pages saved us a lot of time later because we did not have to repeat all the information every time someone contacted us.
 
 We find that keeping track of all the mentors, the students, the projects, and the meta information is a necessary but time consuming task.
 We wish we had a tool to help us do that.

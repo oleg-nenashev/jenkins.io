@@ -57,7 +57,7 @@ We prepared a list of project ideas in a google doc, and we tracked ownership of
 Each project idea was further elaborated in its own google doc.
 Since we wanted all the project ideas to be documented the same way, we created a template to guide the contributors.
 Most of the project idea documents were written by org admins or mentors, but occasionally a student proposes a genuine idea.
-We also capture in that document contact information such as github and gitter handles, and a preliminary list of potential mentors for the project.
+We also captured contact information in that document such as github and gitter handles, and a preliminary list of potential mentors for the project.
 We embedded all the project documents on our website.
 
 We made extensive use of google sheets to track lists of projects and participants during the program.

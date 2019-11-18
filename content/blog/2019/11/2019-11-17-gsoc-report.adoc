@@ -44,7 +44,7 @@ Unfortunately, we had a some difficulty getting all mentors to respond in time f
 We have found that the link:https://developers.google.com/open-source/gsoc/resources/glossary#community_bonding_period[community bonding phase] was crucial to the success of each project.
 Usually projects that don’t do well during community bonding have difficulties later on.
 
-We adopted Zoom Meetings towards the end of the program, and we are finding it easier to work with than Google hangouts.
+We adopted Zoom Meetings towards the end of the program and we are finding it easier to work with than Google hangouts.
 
 We will talk about the projects a little later in the document.
 

@@ -93,7 +93,7 @@ Another thing that was hard was to get an overview of how all the projects were 
 We were using Gitter chat for most communications, but from an admin point of view this is more fragmented than mailing lists.
 It is also harder to search.
 Chat rooms are very convenient because they are focused, but from an admin point of view, the lack of threads in gitter makes it hard to get an overview.
-Gitter threads was added recently (Nov 2019) but does not work well yet on Android and iOS.
+Gitter threads were added recently (Nov 2019) but do not yet work well on Android and iOS.
 Perhaps some kind of objective tracking tool would help.
 
 In our organization, we try to get everyone to beat the deadlines by a couple of days, because we know that there might be events such as power outages,

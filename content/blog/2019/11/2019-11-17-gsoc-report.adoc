@@ -89,7 +89,7 @@ But for the others, it’s hard.
 We know we cannot make the perfect decision, and by experience, we know that some students or some mentors will not be able to complete the program due to uncontrollable life events, even for the outstanding proposals.
 So we have to make the best decision knowing that some of our choices won't complete the program.
 
-Another thing that was hard was to get an overview of how all the projects were doing once they got going.
+Another thing that was hard was to get an overview of how all the projects were doing once they were running.
 We were using Gitter chat for most communications, but from an admin point of view this is more fragmented than mailing lists.
 It is also harder to search.
 Chat rooms are very convenient because they are focused, but from an admin point of view, the lack of threads in gitter makes it hard to get an overview.

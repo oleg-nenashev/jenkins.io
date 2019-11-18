@@ -100,7 +100,7 @@ In our organization, we try to get everyone to beat the deadlines by a couple of
 bad weather (happens even in Seattle!), or other uncontrolled interruptions, that might interfere with submitting project data.
 We also know that when deadlines coincide with weekends, there is a risk that people may forget.
 
-At the end of our project, we also held a retrospective and captured some ideas for the next few years.
+At the end of our project, we also held a retrospective and captured some ideas for the future.
 
 == Project details
 

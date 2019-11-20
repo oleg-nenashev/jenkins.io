@@ -7,10 +7,14 @@ tags:
 - jenkins
 - community
 - events
-author: martinda
+authors:
+- martinda
+- jeffpearce
+- oleg_nenashev
+- markyjackson-taulia
 ---
 
-GSoC is officially completed and we are happy to announce that five projects were successfully completed.
+Google Summer of Code (GSoC) 2019 is officially completed and we are happy to announce that five projects were successfully completed.
 We held the final presentations in late August and Google published the results on Sept 3rd.
 
 We would like to thank all our students, their mentors and all other contributors who proposed project ideas, participated in student selection, in community bonding and in further reviews.
@@ -44,6 +48,7 @@ Unfortunately, we had a some difficulty getting all mentors to respond in time f
 
 We have found that the link:https://developers.google.com/open-source/gsoc/resources/glossary#community_bonding_period[community bonding phase] was crucial to the success of each project.
 Usually projects that don’t do well during community bonding have difficulties later on.
+In order to get students involved into the community better, almost all projects were handled under umbrella of link:/sigs[Special Interest Groups] so that there were more stakeholders and communications.
 
 We adopted Zoom Meetings towards the end of the program and we are finding it easier to work with than Google hangouts.
 
@@ -54,14 +59,15 @@ We will talk about the projects a little later in the document.
 Here are some of the things our organization did before and during GSoC behind the scenes.
 To prepare for the influx of students, we updated all our GSoC pages and wrote down all the knowledge we accumulated over the years of running the program.
 
-We prepared a list of project ideas in a google doc, and we tracked ownership of each project in a table of that document.
-Each project idea was further elaborated in its own google doc.
+We prepared a list of project ideas in a Google doc, and we tracked ownership of each project in a table of that document.
+Each project idea was further elaborated in its own Google doc.
 Since we wanted all the project ideas to be documented the same way, we created a template to guide the contributors.
-Most of the project idea documents were written by org admins or mentors, but occasionally a student proposes a genuine idea.
+Most of the project idea documents were written by org admins or mentors, but occasionally a student proposed a genuine idea.
 We also captured contact information in that document such as github and gitter handles, and a preliminary list of potential mentors for the project.
 We embedded all the project documents on our website.
 
-We made extensive use of google sheets to track lists of projects and participants during the program.
+We made extensive use of Google sheets to track lists of projects and participants during the program
+to rank projects and to track statuses of project phases (community bonding, coding, etc.).
 It is a challenge to keep these sheets up to date, as each project involves several people and several links.
 We have found it time consuming and a bit hard to keep these sheets up to date, accurate and complete, specially up until the start of the coding phase.
 

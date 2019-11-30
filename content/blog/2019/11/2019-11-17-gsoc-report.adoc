@@ -34,7 +34,9 @@ I would like to start this report by thanking all participants, students, mentor
 We could not do this without you.
 We presented the
 link:https://docs.google.com/presentation/d/e/2PACX-1vQf5RLIJXq8cPEKbCIaA4Bn3tMy5ITB4z2oGJKwLOJz_ne2AiNuSSvXi51nMDDDgA/pub?start=false&loop=false&delayms=3000[2019 Jenkins GSoC report]
-at link:https://www.cloudbees.com/devops-world/san-francisco[DevOps World | Jenkins World San Francisco] conference.
+at the link:https://www.cloudbees.com/devops-world/san-francisco[DevOps World | Jenkins World San Francisco]
+and at the
+link:https://www.previous.cloudbees.com/devops-world/lisbon[DevOps World | Jenkins World 2019 Lisbon] conferences.
 
 For the 2019 edition of GSoC, we started gathering project ideas in the last months of 2018, long before the official start of the program.
 We upgraded the GSoC project section of the website with lots of information for link:https://jenkins.io/projects/gsoc/[students and mentors].

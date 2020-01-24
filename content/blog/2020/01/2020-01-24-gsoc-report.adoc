@@ -12,36 +12,30 @@ authors:
 - jeffpearce
 - oleg_nenashev
 - markyjackson-taulia
+opengraph:
+  image: /images/post-images/2020/01-gsoc2019-report/gsoc2019-highlights.png
 ---
 
 Google Summer of Code never is a summer internship program, but actually it is a year-round effort for the organization and some community members.
 Now, after the DevOps World | Jenkins World conference in Lisbon, we can say that GSoC 2019 is officially over.
+We would like to start this by thanking all participants: students, mentors, subject matter experts and all other contributors who proposed project ideas, participated in student selection, in community bonding and in further discussions and reviews.
+Google Summer of Code is a major effort which would not be possible without the active participation of the Jenkins community.
+
 In this blogpost we would like to share the results and our experience from the previous year.
 
 === Results
 
-We are happy to announce that five projects were successfully completed: 
+Five GSoC projects were successfully completed this year:
+link:https://jenkins.io/projects/gsoc/2019/role-strategy-performance[Role Strategy Plugin Performance Improvements],
+link:https://jenkins.io/projects/gsoc/2019/plugin-installation-manager-tool-cli[Plugins Installation Manager CLI Tool/Library],
+link:https://jenkins.io/projects/gsoc/2019/working-hours-improvements[Working Hours Plugin - UI Improvements],
+link:https://jenkins.io/projects/gsoc/2019/remoting-over-apache-kafka-docker-k8s-features[Remoting over Apache Kafka with Kubernetes features],
+link:https://jenkins.io/projects/gsoc/2019/gitlab-support-for-multibranch-pipeline[Multi-branch Pipeline support for Gitlab SCM].
+We will talk about the projects a little later in the document.
 
-We held the final presentations as Jenkins Online Meetups in late August and Google published the results on Sept 3rd.
-The final presentations can be found here:
-
-* link:https://www.youtube.com/watch?v=g19o24uzy6c[Part 1 presentations]
-* link:https://www.youtube.com/watch?v=cMSbdGwGWp0[Part 2 presentations]
-* link:https://www.youtube.com/watch?v=41dhyFC5Iak[Part 3 presentations]
-
-We would like to thank all our students, their mentors and all other contributors who proposed project ideas, participated in student selection, in community bonding and in further reviews.
-Google Summer of Code is a major effort which would not be possible without the active participation of the Jenkins community.
-
+image::/images/post-images/2020/01-gsoc2019-report/gsoc2019-highlights.png[Highlights, role=center]
 
 == Summary
-
-We would like to start this report by thanking all participants, students, mentors, subject matter experts and community members who support the project and the students.
-We could not do this without you.
-We presented the
-link:https://docs.google.com/presentation/d/e/2PACX-1vQf5RLIJXq8cPEKbCIaA4Bn3tMy5ITB4z2oGJKwLOJz_ne2AiNuSSvXi51nMDDDgA/pub?start=false&loop=false&delayms=3000[2019 Jenkins GSoC report]
-at the link:https://www.cloudbees.com/devops-world/san-francisco[DevOps World | Jenkins World San Francisco]
-and at the
-link:https://www.previous.cloudbees.com/devops-world/lisbon[DevOps World | Jenkins World 2019 Lisbon] conferences.
 
 For the 2019 edition of GSoC, we started gathering project ideas in the last months of 2018, long before the official start of the program.
 We upgraded the GSoC project section of the website with lots of information for link:https://jenkins.io/projects/gsoc/[students and mentors].
@@ -58,8 +52,6 @@ Usually projects that don’t do well during community bonding have difficulties
 In order to get students involved into the community better, almost all projects were handled under umbrella of link:/sigs[Special Interest Groups] so that there were more stakeholders and communications.
 
 We adopted Zoom Meetings towards the end of the program and we are finding it easier to work with than Google hangouts.
-
-We will talk about the projects a little later in the document.
 
 == Running the GSoC program at our organization level
 
@@ -117,6 +109,17 @@ We also know that when deadlines coincide with weekends, there is a risk that pe
 At the end of our project, we also held a retrospective and captured some ideas for the future.
 
 == Project details
+
+We held the final presentations as Jenkins Online Meetups in late August and Google published the results on Sept 3rd.
+The final presentations can be found here:
+link:https://www.youtube.com/watch?v=g19o24uzy6c[Part 1],
+link:https://www.youtube.com/watch?v=cMSbdGwGWp0[Part 2],
+link:https://www.youtube.com/watch?v=41dhyFC5Iak[Part 3].
+We also presented the
+link:https://docs.google.com/presentation/d/e/2PACX-1vQf5RLIJXq8cPEKbCIaA4Bn3tMy5ITB4z2oGJKwLOJz_ne2AiNuSSvXi51nMDDDgA/pub?start=false&loop=false&delayms=3000[2019 Jenkins GSoC report]
+at the link:https://www.cloudbees.com/devops-world/san-francisco[DevOps World | Jenkins World San Francisco]
+and at the
+link:https://www.previous.cloudbees.com/devops-world/lisbon[DevOps World | Jenkins World 2019 Lisbon] conferences.
 
 In the following sections, we present a brief summary of each project, links to the coding phase 3 presentations, and to the final products.
 
@@ -183,7 +186,7 @@ Links:
 * link:https://jenkins.io/blog/2019/08/19/remoting-kafka-kubernetes-release-2/[Blog post for release 2 of the plugin]
 * link:https://github.com/jenkinsci/remoting-kafka-plugin[Source code]
 
-== Multi-branch Pipeline support for Gitlab
+== Multi-branch Pipeline support for Gitlab SCM
 
 * *Student*: link:/blog/authors/baymac[Parichay Barpanda]
 * *Lead mentors*: link:/blog/authors/markyjackson-taulia[Marky Jackson-Taulia], link:/blog/authors/justinharringa[Justin Harringa]
@@ -207,32 +210,33 @@ This year, we collected all the mailing addresses we could and sent to everyone 
 This was a great feel good moment.
 I want to personally thank Alyssa Tong her help on setting aside the t-shirt and stickers.
 
-image:/images/post-images/2019-11-17-gsoc-report/swag-before-shipping.jpg[width=400]
+image:/images/post-images/2020/01-gsoc2019-report/swag-before-shipping.jpg[width=400]
 
 == Mentor summit
 
 Each year Google invites two or more mentors from each organization to the Google Summer of Code Mentor Summit.
 At this event hundreds of open-source project maintainers and mentors meet together and have unconference sessions targeting GSoC, community management and various tools.
 This year the summit was held in Munich,
-and we sent link:TODO[Marky Jackson] and link:TODO[Oleg Nenashev] as representatives there.
+and we sent link:https://github.com/markyjackson-taulia[Marky Jackson] and link:https://github.com/oleg-nenashev[Oleg Nenashev] as representatives there.
 
-You can find a travel report from Marky link:TODO[here].
-Apart from discussing projects and sharing chocolate, we also presented Jenkins there and hosted the unconference session about bots.
+Apart from discussing projects and sharing chocolate, we also presented Jenkins there, conducted a lightning talk and hosted the unconference session about automation bots for GitHub.
+We did not make a team photo there, so try to find Oleg and Marky on this photo:
 
-TODO: Photo of all mentors
+image:/images/post-images/2020/01-gsoc2019-report/gsoc2019-mentor-summit.jpg[GSoC2019 Mentor summit, role=center]
 
 == GSoC Team at DevOps World | Jenkins World
 
 We traditionally use GSoC organization payments and travel grants to sponsor student trips to major Jenkins-related events.
-This year we four students traveled to the DevOps World | Jenkins World conferences in link:https://www.cloudbees.com/devops-world/san-francisco[San-Francisco] and link:https://www.cloudbees.com/devops-world/lisbon[Lisbon].
+This year four students traveled to the DevOps World | Jenkins World conferences in link:https://www.cloudbees.com/devops-world/san-francisco[San-Francisco] and link:https://www.cloudbees.com/devops-world/lisbon[Lisbon].
 Students presented their projects at the community booth and at the contributor summits,
 and their presentations got a lot of traction in the community!
 
 Thanks a lot to Google and CloudBees who made these trips possible.
-You can find a travel report from Natasha link:TODO[here],
+You can find a travel report from Natasha Stopa link:/blog/2019/08/22/devops-world/[here],
 more travel reports are coming soon.
 
-TODO: Add several photos
+image:/images/post-images/2020/01-gsoc2019-report/gsoc2019-team-jw-us.jpg[width=500]
+image:/images/post-images/2020/01-gsoc2019-report/gsoc2019-team-jw-lisbon.jpg[width=500]
 
 == Conclusion
 
@@ -255,3 +259,8 @@ Each year we are impressed by the students who do great work and bring great con
 Yes, there will be Google Summer of Code 2020!
 We plan to participate, and we are looking for project ideas, mentors and students.
 Jenkins GSoC pages have been already updated towards the next year, and we invite everybody interested to join us next year!
+
+* link:/projects/gsoc/[Main page with all contacts] 
+* link:/projects/gsoc/2020/project-ideas/[GSoC 2020 Project Ideas]
+* link:/blog/2019/12/20/call-for-mentors/[GSoC 2020 Call for Mentors and Project Ideas]
+* Information for link:/projects/gsoc/students/[students] and link:/projects/gsoc/mentors/[mentors] 

@@ -141,9 +141,11 @@ The main objective was to address the feedback we got during GSoC 2018 retrospec
 We started gathering project ideas in the last months of 2018.
 We prepared a link:/projects/gsoc/2019/project-ideas/[list of project ideas] in a Google doc, and we tracked ownership of each project in a table of that document.
 Each project idea was further elaborated in its own Google doc.
+We find that when projects get complicated during the definition phase, perhaps they are really too complicated and should not be done.
+
 Since we wanted all the project ideas to be documented the same way, we created a template to guide the contributors.
 Most of the project idea documents were written by org admins or mentors, but occasionally a student proposed a genuine idea.
-We also captured contact information in that document such as github and gitter handles, and a preliminary list of potential mentors for the project.
+We also captured contact information in that document such as GitHub and Gitter handles, and a preliminary list of potential mentors for the project.
 We embedded all the project documents on our website.
 
 **Mentor and student guidelines**.
@@ -249,15 +251,12 @@ image:/images/post-images/2020/01-gsoc2019-report/gsoc2019-team-jw-lisbon.jpg[wi
 
 == Conclusion
 
-This year, five projects were successfully completed. We find this to be normal and in line with what we hear from other participating organizations.
+This year, five projects were successfully completed.
+We find this to be normal and in line with what we hear from other participating organizations.
 
 Taking the time early to update our GSoC pages saved us a lot of time later because we did not have to repeat all the information every time someone contacted us.
-
 We find that keeping track of all the mentors, the students, the projects, and the meta information is a necessary but time consuming task.
 We wish we had a tool to help us do that.
-
-We find that when projects get complicated during the definition phase, perhaps they are really too complicated and should not be done.
-
 Coordinating meetings and reminding participants of what needs to be accomplished for deadlines is part of the cheerleading aspect of GSoC, we need to keep doing this.
 
 Lastly, I want to thank again all participants, we could not do this without you.

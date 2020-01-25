@@ -35,79 +35,6 @@ We will talk about the projects a little later in the document.
 
 image::/images/post-images/2020/01-gsoc2019-report/gsoc2019-highlights.png[Highlights, role=center]
 
-== Summary
-
-For the 2019 edition of GSoC, we started gathering project ideas in the last months of 2018, long before the official start of the program.
-We upgraded the GSoC project section of the website with lots of information for link:https://jenkins.io/projects/gsoc/[students and mentors].
-Students started to reach out very early on as well, many weeks before GSoC officially started.
-This was very motivating.
-Some students even started to work on project ideas before the official start of the program.
-
-This year the org admin team had some very difficult decisions to make.
-With lots of students, lots of projects and lots of mentors, we had to request the right number of slots and try to match the projects with the most chances of success.
-Unfortunately, we had a some difficulty getting all mentors to respond in time for the slot selection, thus we requested fewer slots than we could have filled.
-
-We have found that the link:https://developers.google.com/open-source/gsoc/resources/glossary#community_bonding_period[community bonding phase] was crucial to the success of each project.
-Usually projects that don’t do well during community bonding have difficulties later on.
-In order to get students involved into the community better, almost all projects were handled under umbrella of link:/sigs[Special Interest Groups] so that there were more stakeholders and communications.
-
-We adopted Zoom Meetings towards the end of the program and we are finding it easier to work with than Google hangouts.
-
-== Running the GSoC program at our organization level
-
-Here are some of the things our organization did before and during GSoC behind the scenes.
-To prepare for the influx of students, we updated all our GSoC pages and wrote down all the knowledge we accumulated over the years of running the program.
-
-We prepared a list of project ideas in a Google doc, and we tracked ownership of each project in a table of that document.
-Each project idea was further elaborated in its own Google doc.
-Since we wanted all the project ideas to be documented the same way, we created a template to guide the contributors.
-Most of the project idea documents were written by org admins or mentors, but occasionally a student proposed a genuine idea.
-We also captured contact information in that document such as github and gitter handles, and a preliminary list of potential mentors for the project.
-We embedded all the project documents on our website.
-
-We made extensive use of Google sheets to track lists of projects and participants during the program
-to rank projects and to track statuses of project phases (community bonding, coding, etc.).
-It is a challenge to keep these sheets up to date, as each project involves several people and several links.
-We have found it time consuming and a bit hard to keep these sheets up to date, accurate and complete, specially up until the start of the coding phase.
-
-We updated the link:https://jenkins.io/projects/gsoc/mentors/[mentor information] page with details on what we expect mentors to do during the program,
-including the number of hours that are expected from mentors,
-and we even have a section on preventing link:https://jenkins.io/projects/gsoc/mentors/#conflict-of-interest-prevention[conflict of interest].
-When we recruit mentors, we point them to the mentor information page.
-
-We also updated the link:https://jenkins.io/projects/gsoc/students/[student information page].
-We find this is a huge time saver as every student contacting us has the same questions about joining and participating in the program.
-Instead of re-explaining the program each time, we send them a link to those pages.
-Every year we have students who contact mentors via personal messages.
-*Students, if you are reading this, please do not send us personal messages about the projects, you will not receive any preferential treatment.*
-Obviously, in open source we want all discussions to be public, so students have to be reminded of that regularly.
-This year it was very hard for the org admins to request the right number of slots to GSoC.
-We were trying to form mentor teams at the same time as we were requesting the number of slots, and it was hard to get responses from all mentors in time for the deadline.
-When we request slots, we submit two numbers: a minimum and a maximum. The link:https://google.github.io/gsocguides/mentor/selecting-a-student#googles-selection-process[GSoC guide] states that:
-
-* The minimum is based on the projects that are so amazing they really want to see these projects occur over the summer,
-* and the maximum number should be the number of solid and amazing projects they wish to mentor over the summer.
-
-We were awarded minimum. So we had to make very hard decisions: we had to decide between "amazing" and "solid" proposals.
-
-For some proposals, the very outstanding ones, it’s easy.
-But for the others, it’s hard.
-We know we cannot make the perfect decision, and by experience, we know that some students or some mentors will not be able to complete the program due to uncontrollable life events, even for the outstanding proposals.
-So we have to make the best decision knowing that some of our choices won't complete the program.
-
-Another thing that was hard was to get an overview of how all the projects were doing once they were running.
-We were using Gitter chat for most communications, but from an admin point of view this is more fragmented than mailing lists.
-It is also harder to search.
-Chat rooms are very convenient because they are focused, but from an admin point of view, the lack of threads in gitter makes it hard to get an overview.
-Gitter threads were added recently (Nov 2019) but do not yet work well on Android and iOS.
-Perhaps some kind of objective tracking tool would help.
-
-In our organization, we try to get everyone to beat the deadlines by a couple of days, because we know that there might be events such as power outages,
-bad weather (happens even in Seattle!), or other uncontrolled interruptions, that might interfere with submitting project data.
-We also know that when deadlines coincide with weekends, there is a risk that people may forget.
-
-At the end of our project, we also held a retrospective and captured some ideas for the future.
-
 == Project details
 
 We held the final presentations as Jenkins Online Meetups in late August and Google published the results on Sept 3rd.
@@ -202,6 +129,88 @@ Links:
 * link:https://jenkins.io/projects/gsoc/2019/gitlab-support-for-multibranch-pipeline[Project page]
 * link:https://docs.google.com/presentation/d/1avMoEPMf5Ksc99106fv7bGikAh17GQZJZdwUWKOzYBY/[Link to coding phase 3 presentation]
 * link:https://github.com/jenkinsci/gitlab-branch-source-plugin/[Source code]
+
+== Running the GSoC program at our organization level
+
+Here are some of the things our organization did before and during GSoC behind the scenes.
+To prepare for the influx of students, we updated all our GSoC pages and wrote down all the knowledge we accumulated over the years of running the program.
+We started preparing in October 2018, long before the official start of the program.
+The main objective was to address the feedback we got during GSoC 2018 retrospectives.
+
+**Project ideas**.
+We started gathering project ideas in the last months of 2018.
+We prepared a link:/projects/gsoc/2019/project-ideas/[list of project ideas] in a Google doc, and we tracked ownership of each project in a table of that document.
+Each project idea was further elaborated in its own Google doc.
+Since we wanted all the project ideas to be documented the same way, we created a template to guide the contributors.
+Most of the project idea documents were written by org admins or mentors, but occasionally a student proposed a genuine idea.
+We also captured contact information in that document such as github and gitter handles, and a preliminary list of potential mentors for the project.
+We embedded all the project documents on our website.
+
+**Mentor and student guidelines**.
+We updated the link:https://jenkins.io/projects/gsoc/mentors/[mentor information] page with details on what we expect mentors to do during the program,
+including the number of hours that are expected from mentors,
+and we even have a section on preventing link:https://jenkins.io/projects/gsoc/mentors/#conflict-of-interest-prevention[conflict of interest].
+When we recruit mentors, we point them to the mentor information page.
+
+We also updated the link:https://jenkins.io/projects/gsoc/students/[student information page].
+We find this is a huge time saver as every student contacting us has the same questions about joining and participating in the program.
+Instead of re-explaining the program each time, we send them a link to those pages.
+
+**Application phase**.
+Students started to reach out very early on as well, many weeks before GSoC officially started.
+This was very motivating.
+Some students even started to work on project ideas before the official start of the program.
+
+**Project selection**. This year the org admin team had some very difficult decisions to make.
+With lots of students, lots of projects and lots of mentors, we had to request the right number of slots and try to match the projects with the most chances of success.
+We were trying to form mentor teams at the same time as we were requesting the number of slots, and it was hard to get responses from all mentors in time for the deadline.
+Finally we requested fewer slots than we could have filled.
+When we request slots, we submit two numbers: a minimum and a maximum. The link:https://google.github.io/gsocguides/mentor/selecting-a-student#googles-selection-process[GSoC guide] states that:
+
+* The minimum is based on the projects that are so amazing they really want to see these projects occur over the summer,
+* and the maximum number should be the number of solid and amazing projects they wish to mentor over the summer.
+
+We were awarded minimum. So we had to make very hard decisions: we had to decide between "amazing" and "solid" proposals.
+For some proposals, the very outstanding ones, it’s easy.
+But for the others, it’s hard.
+We know we cannot make the perfect decision, and by experience, we know that some students or some mentors will not be able to complete the program due to uncontrollable life events, even for the outstanding proposals.
+So we have to make the best decision knowing that some of our choices won't complete the program.
+
+**Community Bonding**.
+We have found that the link:https://developers.google.com/open-source/gsoc/resources/glossary#community_bonding_period[community bonding phase] was crucial to the success of each project.
+Usually projects that don’t do well during community bonding have difficulties later on.
+In order to get students involved into the community better, almost all projects were handled under umbrella of link:/sigs[Special Interest Groups] so that there were more stakeholders and communications.
+
+
+
+**Communications**.
+Every year we have students who contact mentors via personal messages.
+Students, if you are reading this, please do **NOT** send us personal messages about the projects, you will not receive any preferential treatment.
+Obviously, in open source we want all discussions to be public, so students have to be reminded of that regularly.
+In 2019 were using Gitter chat for most communications, but from an admin point of view this is more fragmented than mailing lists.
+It is also harder to search.
+Chat rooms are very convenient because they are focused, but from an admin point of view, the lack of threads in Gitter makes it hard to get an overview.
+Gitter threads were added recently (Nov 2019) but do not yet work well on Android and iOS.
+We adopted Zoom Meetings towards the end of the program and we are finding it easier to work with than Google Hangouts.
+
+**Status tracking**.
+Another thing that was hard was to get an overview of how all the projects were doing once they were running.
+We made extensive use of Google sheets to track lists of projects and participants during the program
+to rank projects and to track statuses of project phases (community bonding, coding, etc.).
+It is a challenge to keep these sheets up to date, as each project involves several people and several links.
+We have found it time consuming and a bit hard to keep these sheets up to date, accurate and complete, specially up until the start of the coding phase.
+
+Perhaps some kind of objective tracking tool would help.
+We used Jenkins Jira for tracking projects, with each phase representing a separate sprint.
+It helped a lot for successful projects.
+In our organization, we try to get everyone to beat the deadlines by a couple of days, because we know that there might be events such as power outages,
+bad weather (happens even in Seattle!), or other uncontrolled interruptions, that might interfere with submitting project data.
+We also know that when deadlines coincide with weekends, there is a risk that people may forget.
+
+**Retrospective**.
+At the end of our project, we also held a retrospective and captured some ideas for the future.
+You can fine the notes link:https://docs.google.com/document/d/1qWeuQzMr1lGQUuirgorODwvqEXYH7RiyKkRByIed9co/edit?usp=sharing[here].
+We already addressed the most important comments in our documentation and project ideas for the next year.
 
 == Recognition
 

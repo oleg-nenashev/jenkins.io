@@ -70,6 +70,20 @@ However, this will allow you work on multiple files as part of a single set of c
 You'll save your changes in a local branch and then <<building, build and review>> them locally.
 When they are ready you will push your changes to your your fork and submit a pull request from there.
 
+=== Creating a pull request
+
+Once you finish a patch in your local repository, you can create a pull request against link:https://github.com/jenkins-infra/jenkins.io[jenkins-infra/jenkins.io].
+After it is created, a copy-editors team will review your pull request and provide feedback.
+
+Some tips:
+
+* You can incrementall push additional commits to a pull request, no need to close and recreate a pull request
+* Do not squash and force-push commits to a pull request.
+  It complicates the change reviews, because the commit history is lost.
+  If needed, we can squash your pull request during the merge.
+* There is a GitHub action which automatically compresses images in pull requests.
+  It will add commits to your branch, and you may need to pull the changes.
+
 == Building
 
 This project uses GNU/Make and Docker in order to generate the fully statically
